@@ -39,7 +39,21 @@ public class ApplicationTest {
 	
 	@Test
 	public void testSubtract() {
-		fail("Not yet implemented");
+		
+		long result = 99 - 98;
+		
+		//compare
+		assertEquals(result, classUnderTest.subtract(99, 98));
+		
+		result =  10 - 9 - 1;
+		
+		//compare
+		assertEquals(result, classUnderTest.subtract(10, 9, 1));
+		
+		result = 1000 - 50 - 900;
+		
+		//compare
+		assertEquals(result, classUnderTest.subtract(1000, 50, 900));
 	}
 
 }
