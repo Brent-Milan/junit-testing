@@ -54,6 +54,11 @@ public class ApplicationTest {
 		
 		//compare
 		assertEquals(result, classUnderTest.subtract(1000, 50, 900));
+		
+		result = 0;
+		
+		//compare
+		assertEquals(result, classUnderTest.subtract(0));
 	}
 
 }
