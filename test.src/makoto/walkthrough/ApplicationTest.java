@@ -78,5 +78,14 @@ public class ApplicationTest {
 		//compare
 		assertEquals(result, classUnderTest.multiply(0));
 	}
+	
+	@Test
+	public void testDivide() {
+		
+		long result = 10/10;
+		
+		//compare
+		assertEquals(result, classUnderTest.divide(10, 10));
+	}
 
 }
