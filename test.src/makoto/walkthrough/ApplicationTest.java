@@ -93,7 +93,17 @@ public class ApplicationTest {
 		
 		long result = 10 % 3;
 		
+		//compare
 		assertEquals(result, classUnderTest.modulus(10, 3));
+		
+		result = 64 % 7;
+		
+		//compare
+		assertEquals(result, classUnderTest.modulus(64, 7));
+		
+		result = 1 % 1;
+		
+		assertEquals(result, classUnderTest.modulus(1, 1));
 	}
 
 }
