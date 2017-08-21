@@ -87,5 +87,13 @@ public class ApplicationTest {
 		//compare
 		assertEquals(result, classUnderTest.divide(10, 10));
 	}
+	
+	@Test
+	public void testModulus() {
+		
+		long result = 10 % 3;
+		
+		assertEquals(result, classUnderTest.modulus(10, 3));
+	}
 
 }
