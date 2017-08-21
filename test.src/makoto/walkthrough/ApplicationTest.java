@@ -60,5 +60,23 @@ public class ApplicationTest {
 		//compare
 		assertEquals(result, classUnderTest.subtract(0));
 	}
+	
+	@Test
+	public void testMultiply() {
+		long result = 10 * 10;
+		
+		//compare
+		assertEquals(result, classUnderTest.multiply(10, 10));
+		
+		result = 1 * 11 * 200 * 0;
+		
+		//compare
+		assertEquals(result, classUnderTest.multiply(1, 11, 200, 0));
+		
+		result = 0;
+		
+		//compare
+		assertEquals(result, classUnderTest.multiply(0));
+	}
 
 }

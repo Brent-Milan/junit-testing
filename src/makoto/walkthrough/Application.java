@@ -1,6 +1,6 @@
 package makoto.walkthrough;
 
-public class Application implements Subtractor, Adder {
+public class Application implements Subtractor, Adder, Multiplier {
 
 		@Override
 		public long add(long... operands) {
@@ -12,7 +12,7 @@ public class Application implements Subtractor, Adder {
 		}
 		
 		@Override
-		public long subtract(long...operands) {
+		public long subtract(long... operands) {
 			long result = operands[0];
 			for(int index =  1; index < operands.length; index++) {
 				result -= operands[index];
@@ -20,6 +20,13 @@ public class Application implements Subtractor, Adder {
 			return result;
 		}
 
-	
+		@Override 
+		public long multiply(long... operands) {
+			long result = operands[0];
+			for(int index = 1; index < operands.length; index++) {
+				result *= operands[index];
+			}
+			return result;
+		}
 
 }
