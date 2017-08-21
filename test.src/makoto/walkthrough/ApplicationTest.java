@@ -20,7 +20,7 @@ public class ApplicationTest {
 		long result = 10 + 23 + (-1) + 16;
 		
 		//compare
-		assertEquals(result, classUnderTest.add(10, 23, -1, 16));
+		assertEquals(result, classUnderTest.add(10, 23, (-1), 16));
 		
 		result = 100 + 102;
 		

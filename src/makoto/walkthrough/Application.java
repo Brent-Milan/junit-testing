@@ -5,7 +5,7 @@ public class Application implements Subtractor, Adder {
 		@Override
 		public long add(long... operands) {
 			long result = operands[0];
-			for(int index = 0; index < operands.length; index++) {
+			for(int index = 1; index < operands.length; index++) {
 				result += operands[index];
 			}
 			return result;
@@ -14,7 +14,7 @@ public class Application implements Subtractor, Adder {
 		@Override
 		public long subtract(long...operands) {
 			long result = operands[0];
-			for(int index =  0; index < operands.length; index++) {
+			for(int index =  1; index < operands.length; index++) {
 				result -= operands[index];
 			}
 			return result;
